@@ -15,6 +15,8 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.voidIngredients"))
                     .icon(() -> new ItemStack(ModItems.SHADOW_FABRIC)).entries((displayContext, entries) -> {
                         entries.add(ModItems.SHADOW_FABRIC);
+                        entries.add(ModItems.SHADOW_SEAL);
+                        entries.add(ModItems.SHADOW_EXTRACTOR);
                     })
                     .build()
     );
