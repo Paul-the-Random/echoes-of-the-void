@@ -2,6 +2,7 @@ package org.paultherandom.voidechoes;
 
 import net.fabricmc.api.ModInitializer;
 
+import org.paultherandom.voidechoes.item.ModItemGroups;
 import org.paultherandom.voidechoes.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,6 +17,8 @@ public class EchoesOfTheVoid implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.modItemGroupRegister();
+
 		ModItems.modItemRegister();
 	}
 }

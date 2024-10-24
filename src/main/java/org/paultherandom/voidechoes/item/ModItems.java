@@ -14,7 +14,7 @@ public class ModItems {
     public static final Item SHADOW_FABRIC = itemRegister("shadow_fabric", new Item(new FabricItemSettings()));
 
     private static void addItemToIngredientTab(FabricItemGroupEntries entries) {
-        entries.add(SHADOW_FABRIC);
+        //entries.add(SHADOW_FABRIC);
     }
 
     private static Item itemRegister(String id, Item item) {
@@ -24,6 +24,6 @@ public class ModItems {
     public static void modItemRegister() {
         EchoesOfTheVoid.LOGGER.info("Registering Mod Items for " + EchoesOfTheVoid.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemToIngredientTab);
+        //ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemToIngredientTab);
     }
 }
