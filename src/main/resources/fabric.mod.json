@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "echoes-of-the-void",
+	"version": "${version}",
+	"name": "Echoes of the Void",
+	"description": "A mod that expands upon one of Minecraft's most mysterious and often overlooked features: the void. This mod transforms the void into a realm of its own. Why leave it as a mere limit when it can be a gateway to expansion?",
+	"authors": [
+		"Paul; the Random"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://modrinth.com/project/echoes-of-the-void/"
+	},
+	"license": "MIT",
+	"icon": "assets/echoes-of-the-void/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"org.paultherandom.voidechoes.EchoesOfTheVoid"
+		],
+		"client": [
+			"org.paultherandom.voidechoes.EchoesOfTheVoidClient"
+		],
+		"fabric-datagen": [
+			"org.paultherandom.voidechoes.EchoesOfTheVoidDataGenerator"
+		]
+	},
+	"mixins": [
+		"echoes-of-the-void.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
