@@ -21,7 +21,7 @@ public class ModItemGroups {
                     .build()
     );
 
-    public static void modItemGroupRegister() {
+    public static void initialize() {
         EchoesOfTheVoid.LOGGER.info("Registering Item Groups for " + EchoesOfTheVoid.MOD_ID);
 
 

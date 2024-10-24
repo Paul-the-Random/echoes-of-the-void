@@ -17,8 +17,8 @@ public class EchoesOfTheVoid implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItemGroups.modItemGroupRegister();
+		ModItemGroups.initialize();
 
-		ModItems.modItemRegister();
+		ModItems.initialize();
 	}
 }
