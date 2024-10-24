@@ -13,7 +13,8 @@ public class ModItemGroups {
     public static final ItemGroup VOID_INGREDIENTS = Registry.register(Registries.ITEM_GROUP,
             new Identifier(EchoesOfTheVoid.MOD_ID, "void_ingredients"),
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.voidIngredients"))
-                    .icon(() -> new ItemStack(ModItems.SHADOW_FABRIC)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.SHADOW_FABRIC))
+                    .entries((displayContext, entries) -> {
                         entries.add(ModItems.SHADOW_FABRIC);
                         entries.add(ModItems.SHADOW_SEAL);
                         entries.add(ModItems.SHADOW_EXTRACTOR);
