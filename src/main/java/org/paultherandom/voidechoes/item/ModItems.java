@@ -10,6 +10,8 @@ import org.paultherandom.voidechoes.EchoesOfTheVoid;
 
 public class ModItems {
     public static final Item SHADOW_FABRIC = itemRegister("shadow_fabric", new Item(new FabricItemSettings()));
+    public static final Item SHADOW_SEAL = itemRegister("shadow_seal", new Item(new FabricItemSettings()));
+    public static final Item SHADOW_EXTRACTOR = itemRegister("shadow_extractor", new Item(new FabricItemSettings()));
 
     private static void addItemToIngredientTab(FabricItemGroupEntries entries) {
         //entries.add(SHADOW_FABRIC);

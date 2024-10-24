@@ -1,5 +1,7 @@
 {
   "item.echoes-of-the-void.shadow_fabric": "Shadow Fabric",
+  "item.echoes-of-the-void.shadow_seal": "Shadow Seal",
+  "item.echoes-of-the-void.shadow_extractor": "Shadow Extractor",
 
   "itemGroup.voidIngredients": "Ingredients"
 }
