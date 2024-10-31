@@ -22,5 +22,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SHADOW_FABRIC, Models.GENERATED);
         itemModelGenerator.register(ModItems.SHADOW_SEAL, Models.GENERATED);
         itemModelGenerator.register(ModItems.SHADOW_EXTRACTOR, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.OMINOUS_MOLD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OMINOUS_TEMPLATE, Models.GENERATED);
     }
 }

@@ -28,9 +28,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.POLISHED_DEEPSLATE), conditionsFromItem(Items.POLISHED_DEEPSLATE))
                 .offerTo(recipeExporter, new Identifier(getRecipeName(ModItems.SHADOW_SEAL)));
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SHADOW_EXTRACTOR, 1)
-                .pattern("#O#")
+                .pattern(" O ")
                 .pattern("NSN")
-                .pattern("#D#")
+                .pattern(" D ")
                 .input('D', Items.DIAMOND)
                 .input('O', ModItems.OMINOUS_MOLD)
                 .input('S', Items.SCULK_CATALYST)
