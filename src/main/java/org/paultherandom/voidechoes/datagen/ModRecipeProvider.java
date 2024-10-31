@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
@@ -38,5 +39,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.SHADOW_FABRIC), conditionsFromItem(ModItems.SHADOW_FABRIC))
                 .criterion(hasItem(ModItems.OMINOUS_MOLD), conditionsFromItem(ModItems.OMINOUS_MOLD))
                 .offerTo(recipeExporter, new Identifier(getRecipeName(ModItems.SHADOW_EXTRACTOR)));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.OMINOUS_TEMPLATE, 1)
+                .input(ModItems.SHADOW_FABRIC)
+                .input(ModItems.OMINOUS_MOLD)
+                .criterion(hasItem(ModItems.SHADOW_FABRIC), conditionsFromItem(ModItems.SHADOW_FABRIC))
+                .criterion(hasItem(ModItems.OMINOUS_MOLD), conditionsFromItem(ModItems.OMINOUS_MOLD))
+                .offerTo(recipeExporter);
     }
 }
