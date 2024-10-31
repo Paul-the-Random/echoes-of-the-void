@@ -23,7 +23,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('A', Items.AMETHYST_SHARD)
                 .input('E', Items.ENDER_EYE)
                 .input('B', Items.POLISHED_DEEPSLATE)
-                .criterion(hasItem(ModItems.SHADOW_FABRIC), conditionsFromItem(ModItems.SHADOW_FABRIC))
+                .criterion(hasItem(Items.AMETHYST_SHARD), conditionsFromItem(Items.AMETHYST_SHARD))
+                .criterion(hasItem(Items.ENDER_EYE), conditionsFromItem(Items.ENDER_EYE))
+                .criterion(hasItem(Items.POLISHED_DEEPSLATE), conditionsFromItem(Items.POLISHED_DEEPSLATE))
                 .offerTo(recipeExporter, new Identifier(getRecipeName(ModItems.SHADOW_SEAL)));
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SHADOW_EXTRACTOR, 1)
                 .pattern("#O#")
