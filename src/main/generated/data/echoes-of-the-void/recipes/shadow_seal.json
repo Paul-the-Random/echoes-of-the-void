@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "B": {
+      "item": "minecraft:polished_deepslate"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    }
+  },
+  "pattern": [
+    "BEB",
+    "BAB",
+    "BBB"
+  ],
+  "result": {
+    "item": "echoes-of-the-void:shadow_seal"
+  }
+}

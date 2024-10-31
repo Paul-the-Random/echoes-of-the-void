@@ -1,0 +1,60 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_amethyst_shard": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:amethyst_shard"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_ender_eye": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:ender_eye"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_polished_deepslate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:polished_deepslate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:shadow_seal"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_amethyst_shard",
+      "has_ender_eye",
+      "has_polished_deepslate"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:shadow_seal"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "echoes-of-the-void:shadow_fabric"
+    },
+    {
+      "item": "echoes-of-the-void:ominous_mold"
+    }
+  ],
+  "result": {
+    "item": "echoes-of-the-void:ominous_template"
+  }
+}

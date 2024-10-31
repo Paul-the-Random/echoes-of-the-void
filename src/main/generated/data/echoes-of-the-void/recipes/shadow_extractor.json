@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "N": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "O": {
+      "item": "echoes-of-the-void:ominous_mold"
+    },
+    "S": {
+      "item": "minecraft:sculk_catalyst"
+    }
+  },
+  "pattern": [
+    " O ",
+    "NSN",
+    " D "
+  ],
+  "result": {
+    "item": "echoes-of-the-void:shadow_extractor"
+  }
+}
