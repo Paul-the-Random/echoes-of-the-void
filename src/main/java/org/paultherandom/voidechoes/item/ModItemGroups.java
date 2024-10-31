@@ -19,6 +19,8 @@ public class ModItemGroups {
                         entries.add(ModItems.SHADOW_FABRIC);
                         entries.add(ModItems.SHADOW_SEAL);
                         entries.add(ModItems.SHADOW_EXTRACTOR);
+                        entries.add(ModItems.OMINOUS_MOLD);
+                        entries.add(ModItems.OMINOUS_TEMPLATE);
                     })
                     .build()
     );

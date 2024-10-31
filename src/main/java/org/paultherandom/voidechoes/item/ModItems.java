@@ -6,12 +6,18 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import org.paultherandom.voidechoes.EchoesOfTheVoid;
 
 public class ModItems {
-    public static final Item SHADOW_FABRIC = itemRegister("shadow_fabric", new Item(new FabricItemSettings()));
-    public static final Item SHADOW_SEAL = itemRegister("shadow_seal", new Item(new FabricItemSettings()));
-    public static final Item SHADOW_EXTRACTOR = itemRegister("shadow_extractor", new Item(new FabricItemSettings()));
+    public static final Item SHADOW_FABRIC = itemRegister("shadow_fabric", new Item(new FabricItemSettings()
+            .rarity(Rarity.EPIC)
+            .fireproof()));
+    public static final Item SHADOW_SEAL = itemRegister("shadow_seal", new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
+    public static final Item SHADOW_EXTRACTOR = itemRegister("shadow_extractor", new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
+
+    public static final Item OMINOUS_MOLD = itemRegister("ominous_mold", new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
+    public static final Item OMINOUS_TEMPLATE = itemRegister("ominous_template", new Item(new FabricItemSettings().rarity(Rarity.RARE)));
 
     private static void addItemToIngredientTab(FabricItemGroupEntries entries) {
         //entries.add(SHADOW_FABRIC);
