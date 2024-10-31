@@ -27,7 +27,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.AMETHYST_SHARD), conditionsFromItem(Items.AMETHYST_SHARD))
                 .criterion(hasItem(Items.ENDER_EYE), conditionsFromItem(Items.ENDER_EYE))
                 .criterion(hasItem(Items.POLISHED_DEEPSLATE), conditionsFromItem(Items.POLISHED_DEEPSLATE))
-                .offerTo(recipeExporter, new Identifier(getRecipeName(ModItems.SHADOW_SEAL)));
+                .offerTo(recipeExporter, new Identifier("echoes-of-the-void", getRecipeName(ModItems.SHADOW_SEAL)));
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SHADOW_EXTRACTOR, 1)
                 .pattern(" O ")
                 .pattern("NSN")
@@ -38,12 +38,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('N', Items.NETHERITE_SCRAP)
                 .criterion(hasItem(ModItems.SHADOW_FABRIC), conditionsFromItem(ModItems.SHADOW_FABRIC))
                 .criterion(hasItem(ModItems.OMINOUS_MOLD), conditionsFromItem(ModItems.OMINOUS_MOLD))
-                .offerTo(recipeExporter, new Identifier(getRecipeName(ModItems.SHADOW_EXTRACTOR)));
+                .offerTo(recipeExporter, new Identifier("echoes-of-the-void", getRecipeName(ModItems.SHADOW_EXTRACTOR)));
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.OMINOUS_TEMPLATE, 1)
                 .input(ModItems.SHADOW_FABRIC)
                 .input(ModItems.OMINOUS_MOLD)
                 .criterion(hasItem(ModItems.SHADOW_FABRIC), conditionsFromItem(ModItems.SHADOW_FABRIC))
                 .criterion(hasItem(ModItems.OMINOUS_MOLD), conditionsFromItem(ModItems.OMINOUS_MOLD))
-                .offerTo(recipeExporter);
+                .offerTo(recipeExporter, new Identifier("echoes-of-the-void", getRecipeName(ModItems.OMINOUS_TEMPLATE)));
     }
 }
